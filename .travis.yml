@@ -15,3 +15,4 @@ deploy:
   skip_cleanup: true
   script:
   - curl -T comparator-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ue-shapurko:$BINTRAY_API_KEY "https://api.bintray.com/content/e-shapurko/leetcode/comparator/$TRAVIS_BUILD_NUMBER/comparator-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+  
